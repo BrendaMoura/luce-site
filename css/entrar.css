@@ -1,0 +1,169 @@
+:root {
+    --purple: #6f42c1;
+    --purplePreenchimento: #6829D4;
+    --purpleBorda: #622392;
+    --yellow: #ffc107;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: var(--purple);
+}
+
+h2 {
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 10%;
+    color: white;
+}
+
+.login {
+    width: 30%;
+    height: 50%;
+    background: var(--purplePreenchimento);
+    margin: auto;
+    margin-top: 10%;
+    border: solid 5px var(--yellow);
+    border-radius: 40px;
+    overflow: hidden;
+    /* background: linear-gradient(to right, #05FBFF, #1E00FF); */
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--purple);
+}
+
+.geralInput,
+.geralInput:focus,
+.geralInput:before {
+    width: 60%;
+    height: 10%;
+    background: transparent;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px solid var(--purpleBorda);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    /* Border Shadow */
+    -moz-box-shadow: 2px 2px 2px var(--purpleBorda);
+    -webkit-box-shadow: 2px 2px 2px var(--purpleBorda);
+    box-shadow: 2px 2px 2px var(--purpleBorda);
+    color: white;
+}
+
+input[type=password] {
+    margin: auto;
+    margin-top: 0%;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    background: var(--yellow);
+    border: solid 1px var(--purpleBorda);
+    border-radius: 30px;
+    margin-left: 60%;
+    margin-top: 0%;
+}
+
+button:hover a {
+    color: white;
+}
+
+.outros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.loginExtra {
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    margin-top: 0;
+    border: 0;
+    background: transparent;
+    color: white;
+}
+
+.loginExtra:hover {
+    color: var(--yellow);
+}
+
+@media only screen and (max-width: 800px) {
+    /* MANU */
+    .box {
+        flex-direction: column;
+        position: fixed;
+        height: auto;
+        top: 50px;
+        left: 0px;
+        bottom: 0px;
+        background-color: var(--verde);
+        visibility: hidden;
+    }
+    #logo {
+        position: relative;
+        top: 0px;
+        left: 10px;
+        height: 40px;
+    }
+    #hamburger {
+        position: absolute;
+        background: #08C;
+        border: 1px solid rgba(0, 0, 0, .1);
+        border-radius: 100%;
+        color: white;
+        font-weight: bold;
+        top: 10px;
+        left: 10px;
+        height: 30px;
+        width: 30px;
+        background-image: url(../imagem/hamb.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: ease-in-out 0.5s;
+    }
+    #opcao {
+        width: 100%;
+        height: auto;
+    }
+    #toggle:checked~.box {
+        visibility: visible;
+    }
+    #toggle:checked~#hamburger {
+        background-color: var(--verde);
+    }
+    /* ENTRAR */
+    .login {
+        width: 100%;
+        height: auto;
+        margin-top: 30%;
+        border: none;
+        border-radius: 0%;
+    }
+    .geralInput,
+    .geralInput:focus,
+    .geralInput:before {
+        width: 80%;
+        margin-bottom: 5%;
+        padding: 5px;
+    }
+    button {
+        margin-left: 65%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}

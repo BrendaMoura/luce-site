@@ -1,0 +1,207 @@
+:root {
+    --purple: #6f42c1;
+    --yellow: #ffc107;
+}
+
+body,
+html {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin-left: 20px;
+}
+
+#lateral {
+    padding: 0 50px 0 0;
+    position: fixed;
+    width: 370px;
+    height: 100%;
+    left: -320px;
+    background: var(--yellow);
+    color: aliceblue;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+#lateral :before {
+    position: fixed;
+    left: 4px;
+    top: 45px;
+}
+
+#lateral:hover:before,
+#lateral:focus:before {
+    left: -500px
+}
+
+#lateral:hover,
+#lateral:focus,
+#lateral:active {
+    -moz-transform: translate(320px, 0);
+    -webkit-transform: translate(320px, 0);
+    -o-transform: translate(320px, 0);
+    transform: translate(320px, 0);
+    padding-right: 0;
+}
+
+.menu {
+    margin: 5%;
+    font-family: 'Utsaah';
+    font-size: 25px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menuLih {
+    list-style-type: none;
+}
+
+.menuLih a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+}
+
+.sair {
+    text-decoration: none;
+    display: block;
+    color: yellow;
+    padding: 14px 16px;
+}
+
+.sair:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.menuLih a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.blocoPessoa {
+    margin-top: 5%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.boxIcone {
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icone {
+    width: 20%;
+    height: 70%;
+    margin: 10px;
+    border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    width: 93%;
+    margin-left: 5%;
+}
+
+.partePessoas {
+    height: 60%;
+    width: 100%;
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--yellow);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.titulom {
+    width: 20%;
+    height: 110%;
+    margin-top: 3%;
+    border-radius: 50%;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    background: white;
+    background-image: url(../imagem/happy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid white;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .15), 0 0 0 4px rgba(0, 0, 0, .05);
+}
+
+.parteSuperior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: transparent;
+}
+
+.adicionar {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    right: 10px;
+    background: var(--purple);
+}
+
+#evolucao {
+    background-image: url("../imagem/report.png");
+}
+
+#alterar {
+    background-image: url("../imagem/happy.png");
+}
+
+#apagar {
+    background-image: url("../imagem/happy.png");
+}
+
+#pessoa1 {
+    background-image: url("../imagem/girl.png");
+}
+
+#pessoa2 {
+    background-image: url("../imagem/boy.png");
+}

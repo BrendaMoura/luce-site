@@ -1,0 +1,368 @@
+/* GERAL */
+
+:root {
+    --azul: #236CFF;
+    --yellow2: #FDDB3A;
+    --purple2: #6829D4;
+    --green: #65D4BB;
+    --purple: #6f42c1;
+    --yellow: #ffc107;
+    --azul2: #00678c;
+    --green2: #28a745;
+    --verde: #a6ce39;
+    --laranja: #fd5f00;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tituloBloco {
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    font-size: 35px;
+    color: var(--purple);
+    margin-top: 5%;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.principal {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+
+/* PLACEHOLDER */
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+ ::-moz-placeholder {
+    color: white;
+}
+
+ :-ms-input-placeholder {
+    color: white;
+}
+
+ :-moz-placeholder {
+    color: white;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* SLIDER */
+
+.mySlides {
+    display: none;
+    background-color: var(--verde);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.principalSlider {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+#principalSlider .mySlides .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg, #00678c 0%, #a6ce39 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1);
+    opacity: .5;
+}
+
+#imgDiv {
+    background-image: url(../imagem/slider1.jpg);
+}
+
+#imgDiv2 {
+    background-image: url(../imagem/slider2.jpg);
+}
+
+.divt {
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 40%;
+    left: 5%;
+    position: relative;
+    color: white;
+}
+
+.divt p {
+    color: #f8f9fa;
+    font-size: 25px;
+}
+
+.divt h1 {
+    font-size: 40px;
+}
+
+
+/* FUNCOES */
+
+
+/* JOGOS */
+
+
+/* AVATAR */
+
+.bolinha {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 5%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.capaBolinha {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.bolinha:hover .capaBolinha {
+    display: block;
+}
+
+#avatar1 {
+    background-image: url("../imagem/avatar1.jpg");
+}
+
+#avatar2 {
+    background-image: url("../imagem/avatar2.jpeg");
+}
+
+#avatar3 {
+    background-image: url("../imagem/avatar3.jpg");
+}
+
+
+/* FALE CONOSCO */
+
+
+/* FOOTER */
+
+#imagem {
+    margin: 10 auto;
+    height: 100%;
+    width: 9%;
+}
+
+#footer {
+    background: #343a40;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100%/3);
+    overflow: hidden;
+}
+
+.p2 {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+
+.p3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100%/2);
+    overflow: hidden;
+}
+
+.p4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100%/5);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    /* CABEÇALHO */
+    header .mySlides .overlay .overlayy {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    /* SECAO */
+    .bloco {
+        height: auto;
+        flex-direction: column;
+    }
+    /* FALE CONOSCO */
+    /* SLIDER */
+    .principalSlider {
+        height: 50%;
+    }
+    /* MENU */
+    #menu {
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        bottom: 0px;
+        visibility: hidden;
+    }
+    .box,
+    .box2 {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        background-color: lightskyblue;
+        visibility: hidden;
+        position: relative;
+    }
+    #logo {
+        position: static;
+        top: 5px;
+        left: 10px;
+        height: 40px;
+    }
+    #hamburger {
+        position: absolute;
+        background: #08C;
+        border: 1px solid rgba(0, 0, 0, .1);
+        border-radius: 100%;
+        color: white;
+        font-weight: bold;
+        top: 10px;
+        left: 10px;
+        height: 30px;
+        width: 30px;
+        background-image: url(../imagem/hamb.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: ease-in-out 0.5s;
+    }
+    #opcao {
+        width: 100%;
+        height: auto;
+    }
+    #toggle:checked~#menu .box {
+        visibility: visible;
+    }
+    #toggle:checked~#menu .box2 {
+        visibility: visible;
+    }
+    #toggle:checked~#hamburger {
+        background-color: var(--verde);
+    }
+    /* FOOTER */
+    #footer {
+        height: auto;
+    }
+    #imagem {
+        margin: auto;
+        height: 10vh;
+        width: 40%;
+    }
+    .p1 {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .p2 {
+        width: 100%;
+        height: auto;
+    }
+    .p3 {
+        height: auto;
+    }
+}

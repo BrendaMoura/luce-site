@@ -1,0 +1,113 @@
+/* GERAL */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* NAVEGAÇÃO */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all .8s fadeInOpacity linear;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    flex-direction: row;
+    transition: ease .8s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    z-index: 1;
+}
+
+#opcao {
+    float: right;
+    list-style-type: none;
+    display: block;
+    color: var(--azul);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+#opcao:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.corMenu {
+    background-color: var(--purple);
+}
+
+.cor {
+    transition: all .8s fadeInOpacity linear;
+    background-color: var(--yellow);
+}
+
+.menu-fixo #opcao {
+    color: var(--purple);
+}
+
+#toggle {
+    visibility: hidden;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: center;
+}
+
+.box2 {
+    position: absolute;
+    top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    align-items: center;
+    right: 8px;
+}
+
+#logo {
+    position: absolute;
+    left: 10px;
+    height: 40px;
+    padding-top: 4px;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#menu {}
