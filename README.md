@@ -1,7 +1,8 @@
-# https://brendaaaaaa.github.io/Amem/
+# https://brendamoura.github.io/Teste-Site-LUCE/
 
 Anny Karoline<br>
 Brenda Moura<br>
 Euclides Lins<br>
 3º BI<br>
-SITE DE TESTE
+
+Teste do site para o projeto LUCE
