@@ -1,4 +1,4 @@
-# https://brendamoura.github.io/Teste-Site-LUCE/
+# https://brendamoura.github.io/Site-LUCE/
 
 Anny Karoline<br>
 Brenda Moura<br>
